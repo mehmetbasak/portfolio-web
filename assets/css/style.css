@@ -627,6 +627,57 @@ img {
 
 
 
+
+/* ================ SKILLS TITLE===================== */
+.section__skills_title-01{
+  font-size: 4.5em;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  background: linear-gradient(to top, transparent 0%, var(--first-color) 70%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  opacity: .1;
+  
+}
+
+.section__skills_title-02{
+  font-size: 2.5em;
+  font-weight: 700;
+  transform: translateY(-80px);
+  
+}
+
+.section__skills_title-02:before{
+  content:'';
+  position: absolute;
+  width: 40px;
+  height: 5px;
+  right: 0;
+  bottom: 0;
+  background: var(--first-color);
+}
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__sk{
+  position: relative;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* ================ QUALIFICATION TITLE===================== */
 .section__qf_title-01{
   font-size: 4.5em;
@@ -743,6 +794,14 @@ img {
 } */
 
 
+
+
+
+
+
+
+
+
 /* ==================SERVICES==================== */
 .services__container{
   gap:1.5rem;
@@ -840,4 +899,52 @@ img {
 .active-modal{
   opacity: 1;
   visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+/* ================ SERVICES TITLE===================== */
+.section__sv_title-01{
+  font-size: 4.5em;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  background: linear-gradient(to top, transparent 0%, var(--first-color) 70%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  opacity: .1;
+  
+}
+
+.section__sv_title-02{
+  font-size: 2.5em;
+  font-weight: 700;
+  transform: translateY(-80px);
+  
+}
+
+.section__sv_title-02:before{
+  content:'';
+  position: absolute;
+  width: 60px;
+  height: 5px;
+  right: 0;
+  bottom: 0;
+  background: var(--first-color);
+}
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__sv{
+  position: relative;
+  flex-direction: column;
 }
