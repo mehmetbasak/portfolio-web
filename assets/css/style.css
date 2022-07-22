@@ -503,7 +503,7 @@ img {
   font-weight: 800;
   margin-bottom: 2rem;
   background: linear-gradient(to top, transparent 0%, var(--first-color) 70%);
-  -webkit-background-clip:text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color:transparent;
   opacity: .1;
   
@@ -1118,4 +1118,51 @@ img {
 .project__img{
   width: 232px;
   justify-self: center;
+}
+
+
+
+
+
+
+
+/* ===========================TESTIMONIAL======================== */
+.testimonial__data,
+.testimonial__header{
+  display: flex;
+}
+
+.testimonial__data{
+  justify-content: space-between;
+  margin-bottom: var(--mb-1);
+}
+
+.testimonial__img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: var(--h3-font-size) ;
+}
+
+
+.testimonial__name{
+  font-size: var(--h3-font-size) ;
+  font-weight: var(--font-medium);
+}
+
+.testimonial__client{
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.testimonial__description{
+  margin-bottom: var(--mb-2-5);
+}
+
+.testimonial__icon-star{
+  color: var(--first-color);
+}
+
+.swiper .swiper-pagination-testimonial{
+  bottom: 0;
 }
