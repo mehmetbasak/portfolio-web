@@ -137,5 +137,4 @@ let swiperTestimonial = new Swiper('.testimonial__container', {
             slidesPerView:2,
         }
     }
-    
   });
