@@ -535,7 +535,7 @@ img {
   font-weight: 800;
   margin-bottom: 2rem;
   background: linear-gradient(to top, transparent 0%, var(--first-color) 70%);
-  -webkit-background-clip: text;
+  -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
   opacity: .1;
   
@@ -556,6 +556,9 @@ img {
   right: 0;
   bottom: 0;
   background: var(--first-color);
+
+
+  
 }
 
 .flex-center{
@@ -1352,3 +1355,114 @@ color: var(--first-color-lighter);
 ::-webkit-scrollbar-thumb:hover{
   background-color: var(--text-color-light);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and ( max-width: 350px){
+   
+  .container{
+    
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+   }
+
+   .nav__menu{
+      padding:2rem .25rem 4rem;
+   }
+
+   .nav__list{
+    column-gap: 0;
+   }
+
+   .section__qf_title-01{
+    display: none;
+   }
+  
+  
+  
+
+   .home__content{
+    grid-template-columns:  .25fr 3fr;
+   }
+
+   .skills__title{
+    font-size: var(--normal-font-size);
+   }
+
+   .qualification__data{
+    gap : .5rem;
+   }
+   
+   .services__container{
+    grid-template-columns: max-content;
+    justify-content: center;
+   }
+
+   .services__content{
+    padding-right: 3.5rem;
+   }
+
+   .services__modal{
+    padding: 0 .5rem;
+   }
+
+   .project__img{
+    width: 200px;
+
+   }
+
+   .testimonial__data,
+   .testimonial__header{
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .testimonial__img{
+    margin-right: 0;
+    margin-bottom: var(--mb-0-25);
+   }
+
+   .testimonial__data,
+   .testimonial__description{
+    text-align: center;
+   }
+
+   .section__sv_title-01,
+   .section__portfolio_title-01{
+    font-size: 60px;
+   }
+
+   .section__title-01{
+    font-size: 50px;
+    text-align: center;
+   }
+   
+   .section__title-02{
+    text-align: center;
+    transform: translateY(-64px);
+   }
+
+   .section__title-02:before{
+    content:'';
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    right: 0;
+    bottom: 0;
+    background: var(--first-color);
+    transform: translateX(-70px);
+  }
+
+   
+}
+  

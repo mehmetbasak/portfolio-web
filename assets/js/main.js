@@ -57,6 +57,8 @@ skillsHeader.forEach((eL)=>{
 
 
 
+
+
 // =================QUALIFICATIONS TABS===================
 const tabs=document.querySelectorAll('[data-target]'),
         tabContents=document.querySelectorAll('[data-content]')
@@ -76,6 +78,9 @@ tabs.forEach(tab=>{
         tab.classList.add('qualification__active')
     })
 })
+
+
+
 
 
 
@@ -102,6 +107,9 @@ modalCloses.forEach((modalClose,i) => {
         })
     })
 })
+
+
+
 
 
 // =================PORTFOLIO SWIPPER===================
@@ -142,6 +150,9 @@ let swiperTestimonial = new Swiper('.testimonial__container', {
         }
     }
   });
+
+
+
 
 // =================SCROLL SECTIONS ACTIVE LINK===================
 
@@ -207,15 +218,16 @@ const darkTheme = 'dark-theme'
 const iconTheme = 'uil-sun' 
 
 
-// Previously selected topic (if user selected) 
+             // Previously selected topic (if user selected) 
 const selectedTheme = localStorage.getItem('selected-theme') 
 const selectedIcon = localStorage.getItem('selected-icon') 
 
 
-// We obtain the current theme that the interface has by validating the dark-theme class 
+        // We obtain the current theme that the interface has by validating the dark-theme class 
 const getCurrentlheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light' 
 const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun' 
-// We validate if the user previously chose a topic 
+        
+          // We validate if the user previously chose a topic 
 
 if (selectedTheme) { 
     // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark 
