@@ -421,7 +421,7 @@ img {
 
 
 /* ============== Home profil image animaton============ */
-.profile-area{
+ /* .profile-area{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -483,9 +483,80 @@ img {
   height: 19rem;
   border-radius: 50%;
   overflow: hidden;
+}  */
+
+
+
+/* ============== Home profil image animaton 2222============ */
+.profile-area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* ============== Home profil image animaton END============ */
+.profile-area .outer-circle{
+  width: 11rem;
+  height: 11rem;
+  border:1px solid var(--first-color);
+  border-radius: 50%;
+  position: relative;
+  animation: move 50s linear infinite ;
+}
+
+@keyframes move{
+      to{
+          transform: rotate(360deg);
+      }
+}
+
+.profile-area .outer-circle span{
+  /* //White circle */
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  position: absolute;
+  background: white;
+  color: var(--first-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 1rem var(--first-color-lighter);
+}
+
+.profile-area .outer-circle span:nth-child(1){
+ top: -1.3rem;
+ left: calc(50% - 1rem);
+}
+
+.profile-area .outer-circle span:nth-child(2){
+  right: -1.3rem;
+  top: calc(50% - 1rem);
+ }
+
+ .profile-area .outer-circle span:nth-child(3){
+  left: -1.3rem;
+  top: calc(50% - 1rem);
+ }
+
+ .profile-area .outer-circle span:nth-child(4){
+  bottom: -1.3rem;
+  left: calc(50% - 1rem);
+ }
+
+ 
+.profile-area .inner-circle{
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: -1;
+} 
+
+.material-symbols-outlined{
+  font-size: 18px;
+}
 
 
 
@@ -548,18 +619,17 @@ img {
   
 }
 
-.section__title-02:before{
+/* .section__title-02:before{
   content:'';
-  position: absolute;
-  width: 70px;
+  position: fixed;
+  width: 90px;
   height: 5px;
   right: 0;
   bottom: 0;
   background: var(--first-color);
-
-
+  transform: translateY(-450px);
   
-}
+} */
 
 .flex-center{
   display: flex;
@@ -1459,16 +1529,82 @@ color: var(--first-color-lighter);
     transform: translateY(-64px);
    }
 
-   .section__title-02:before{
-    content:'';
-    position: absolute;
-    width: 50px;
-    height: 5px;
-    right: 0;
-    bottom: 0;
-    background: var(--first-color);
-    transform: translateX(-70px);
-  }
+
+
+  /* ============== Home profil image animaton 2222============ */
+.profile-area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-area .outer-circle{
+  width: 11rem;
+  height: 11rem;
+  border:1px solid var(--first-color);
+  border-radius: 50%;
+  position: relative;
+  animation: move 50s linear infinite ;
+}
+
+@keyframes move{
+      to{
+          transform: rotate(360deg);
+      }
+}
+
+.profile-area .outer-circle span{
+  /* //White circle */
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  position: absolute;
+  background: white;
+  color: var(--first-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 1rem var(--first-color-lighter);
+}
+
+.profile-area .outer-circle span:nth-child(1){
+ top: -.8rem;
+ left: calc(50% - 1rem);
+}
+
+.profile-area .outer-circle span:nth-child(2){
+  right: -.8rem;
+  top: calc(50% - 1rem);
+ }
+
+ .profile-area .outer-circle span:nth-child(3){
+  left: -.8rem;
+  top: calc(50% - 1rem);
+ }
+
+ .profile-area .outer-circle span:nth-child(4){
+  bottom: -.8rem;
+  left: calc(50% - 1rem);
+ }
+
+ 
+.profile-area .inner-circle{
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: -1;
+} 
+
+.material-symbols-outlined{
+  font-size: 18px;
+}
+
+.home__img{
+  transform: translateX(-16px);
+}
 
    
 }
@@ -1496,16 +1632,7 @@ color: var(--first-color-lighter);
     text-align: center;
   }
 
-  .section__title-02:before{
-    content:'';
-    position: absolute;
-    width: 55px;
-    height: 5px;
-    right: 0;
-    bottom: 0;
-    background: var(--first-color);
-    transform: translateX(-105px);
-  }
+  
 
   .about__container,
   .skills__container,
@@ -1522,7 +1649,89 @@ color: var(--first-color-lighter);
     justify-content: center;
   }
 
+  .home__scroll{
+   padding-left: 2.5rem;
+  }
+
+
+  /* ============== Home profil image animaton 2222============ */
+.profile-area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.profile-area .outer-circle{
+  width: 16rem;
+  height: 16rem;
+  border:1px solid var(--first-color);
+  border-radius: 50%;
+  position: relative;
+  animation: move 50s linear infinite ;
+}
+
+@keyframes move{
+      to{
+          transform: rotate(360deg);
+      }
+}
+
+.profile-area .outer-circle span{
+  /* //White circle */
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  position: absolute;
+  background: white;
+  color: var(--first-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 1rem var(--first-color-lighter);
+}
+
+.profile-area .outer-circle span:nth-child(1){
+ top: -1.1rem;
+ left: calc(50% - 1rem);
+}
+
+.profile-area .outer-circle span:nth-child(2){
+  right: -1.1rem;
+  top: calc(50% - 1rem);
+ }
+
+ .profile-area .outer-circle span:nth-child(3){
+  left: -1.1rem;
+  top: calc(50% - 1rem);
+ }
+
+ .profile-area .outer-circle span:nth-child(4){
+  bottom: -1.1rem;
+  left: calc(50% - 1rem);
+ }
+
+ 
+.profile-area .inner-circle{
+  position: absolute;
+  width: 14rem;
+  height: 14rem;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: -1;
+} 
+
+.material-symbols-outlined{
+  font-size: 24px;
+}
+
+.home__scroll{
+  display: flex;
+  padding-left: 0;
+ }
+}
+
+
 
 
 
@@ -1712,7 +1921,83 @@ color: var(--first-color-lighter);
     .footer__copy{
       margin-top: 4.5rem;
     }
-  }
+
+     /* ============== Home profil image animaton 2222============ */
+.profile-area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-area .outer-circle{
+  width: 16rem;
+  height: 16rem;
+  border:1px solid var(--first-color);
+  border-radius: 50%;
+  position: relative;
+  animation: move 50s linear infinite ;
+}
+
+@keyframes move{
+      to{
+          transform: rotate(360deg);
+      }
+}
+
+.profile-area .outer-circle span{
+  /* //White circle */
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  position: absolute;
+  background: white;
+  color: var(--first-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 1rem var(--first-color-lighter);
+}
+
+.profile-area .outer-circle span:nth-child(1){
+ top: -1rem;
+ left: calc(50% - 1rem);
+}
+
+.profile-area .outer-circle span:nth-child(2){
+  right: -1rem;
+  top: calc(50% - 1rem);
+ }
+
+ .profile-area .outer-circle span:nth-child(3){
+  left: -1rem;
+  top: calc(50% - 1rem);
+ }
+
+ .profile-area .outer-circle span:nth-child(4){
+  bottom: -1rem;
+  left: calc(50% - 1rem);
+ }
+
+ 
+.profile-area .inner-circle{
+  position: absolute;
+  width: 14rem;
+  height: 14rem;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: -1;
+} 
+
+.material-symbols-outlined{
+  font-size: 24px;
+}
+
+.home__scroll{
+  display: flex;
+  padding-left: 0;
+ }
+}
 
 
 
@@ -1765,6 +2050,84 @@ color: var(--first-color-lighter);
     .contact__inputs{
       grid-template-columns: repeat(2, 1fr);
     }
+
+    .section__title-02::before{
+      transform: translateX(-331px);
+    }
+
+
+
+     /* ============== Home profil image animaton 2222============ */
+.profile-area{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-area .outer-circle{
+  width: 23rem;
+  height: 23rem;
+  border:1px solid var(--first-color);
+  border-radius: 50%;
+  position: relative;
+  animation: move 50s linear infinite ;
+}
+
+@keyframes move{
+      to{
+          transform: rotate(360deg);
+      }
+}
+
+.profile-area .outer-circle span{
+  /* //White circle */
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  position: absolute;
+  background: white;
+  color: var(--first-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 1rem var(--first-color-lighter);
+}
+
+.profile-area .outer-circle span:nth-child(1){
+ top: -1.3rem;
+ left: calc(50% - 1rem);
+}
+
+.profile-area .outer-circle span:nth-child(2){
+  right: -1.3rem;
+  top: calc(50% - 1rem);
+ }
+
+ .profile-area .outer-circle span:nth-child(3){
+  left: -1.3rem;
+  top: calc(50% - 1rem);
+ }
+
+ .profile-area .outer-circle span:nth-child(4){
+  bottom: -1.3rem;
+  left: calc(50% - 1rem);
+ }
+
+ 
+.profile-area .inner-circle{
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.home__img{
+  transform: translateX(62px);
+  
+}
 
   }
 
