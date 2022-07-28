@@ -515,6 +515,25 @@ img {
       }
 }
 
+
+.home__img{
+  animation: move2 5.0s ease-in-out infinite ;
+}
+
+@keyframes move2{
+  0%{
+      transform: translateY(0);
+  }
+
+  50%{
+    transform: translateY(-10px);
+  }
+
+  100%{
+    transform: translateY(0);
+  }
+}
+
 .profile-area .outer-circle span{
   /* //White circle */
   display: block;
@@ -721,11 +740,37 @@ img {
 }
 
 .skills__css{
-  width: 95%;
+  width: 80%;
 }
 
 .skills__js{
-  width: 80%;
+  width: 70%;
+}
+
+.skills__java{
+  width: 60%;
+}
+
+.skills__sql{
+  width: 50%;
+}
+
+.skills__git{
+  width: 90%;
+}
+
+.skills__github{
+  width: 95%;
+}
+
+.skills__ps{
+  width: 95%;
+}
+.skills__effect{
+  width: 90%;
+}
+.skills__premiere{
+  width: 85%;
 }
 
 .skills__list{
@@ -912,9 +957,9 @@ img {
   display: block;
 }
 
-/* .qualification__button .qualification__active{
+.qualification__button.qualification__active{
   color: var(--first-color);
-} */
+}
 
 
 
@@ -1227,9 +1272,22 @@ img {
 }
 
 .project__img{
-  width: 232px;
+  height: 232px;
   justify-self: center;
 }
+
+.project__data{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 37px;
+}
+
+#bt2{
+  width: 158px;
+}
+
+
 
 
 
@@ -1433,6 +1491,14 @@ color: var(--first-color-lighter);
 }
 
 
+.about__data{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
 
 
 
@@ -1497,9 +1563,8 @@ color: var(--first-color-lighter);
     padding: 0 .5rem;
    }
 
-   .project__img{
-    width: 200px;
-
+   .project__data{
+    align-items: center;
    }
 
    .testimonial__data,
@@ -1655,10 +1720,6 @@ color: var(--first-color-lighter);
     justify-content: center;
   }
 
-  .home__scroll{
-   padding-left: 2.5rem;
-  }
-
 
   /* ============== Home profil image animaton 2222============ */
 .profile-area{
@@ -1733,9 +1794,21 @@ color: var(--first-color-lighter);
 
 .home__scroll{
   display: flex;
-  padding-left: 0;
+  padding-left: 37px;
  }
 }
+
+.nv__lg1{
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  
+  
+}
+
+
 
 
 
@@ -2004,6 +2077,8 @@ color: var(--first-color-lighter);
   padding-left: 0;
  }
 }
+
+
 
 
 
