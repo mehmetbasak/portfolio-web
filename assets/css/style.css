@@ -1070,7 +1070,11 @@ img {
 }
 
 
-
+.about__img{
+  display: flex;
+  flex-direction: column;
+  align-self:  start;
+}
 
 
 
